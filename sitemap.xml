@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>/index.html</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-  <url><loc>/lineage/guide/index.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-  <url><loc>/lineage/map/index.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/guide/stat-table.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/guide/weapon-accuracy.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/guide/str-comparison.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/guide/hit-research.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/guide/weapon-enhance-hit.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/map/talking-island.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/map/gurdin.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/map/giran.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/map/silver-knight.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/map/fairy-forest.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/map/windawood.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/map/ant-nest.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>/lineage/map/dragon-valley.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/index.html</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/guide/index.html</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/map/index.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/guide/stat-table.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/guide/weapon-accuracy.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/guide/str-comparison.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/guide/hit-research.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/guide/weapon-enhance-hit.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/guide/speed-test.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/map/aden.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/map/talking-island.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/map/gurdin.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/map/giran.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/map/silver-knight.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/map/fairy-forest.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/map/windawood.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/map/ant-nest.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gamedatavault.com/lineage/map/dragon-valley.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
 </urlset>
