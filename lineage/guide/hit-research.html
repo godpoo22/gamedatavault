@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>命中與攻擊數據研究整理 | 天堂經典版攻略</title>
+<meta name="description" content="天堂經典版命中機制研究，包含 DEX 對命中的影響、STR 區間成長、AC 系統分析，整理自韓國玩家社群實測。">
+<meta property="og:title" content="命中與攻擊數據研究整理 | 天堂經典版攻略">
+<meta property="og:description" content="天堂經典版命中機制研究，包含 DEX 對命中的影響、STR 區間成長、AC 系統分析，整理自韓國玩家社群實測。">
+<meta property="og:type" content="website">
+<link rel="canonical" href="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+<aside id="sidebar">
+  <a href="../../index.html" class="sidebar-header">
+    <span class="logo-icon">⚔️</span>
+    <h1>Game Wiki</h1>
+    <p>遊戲攻略大全</p>
+  </a>
+  <nav>
+    <div class="game-group">
+      <button class="game-btn active" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('open');">
+        <span class="icon">🗡️</span>天堂經典版<span class="chevron">›</span>
+      </button>
+      <div class="submenu open">
+        <a class="sub-btn" href="../../lineage/map/index.html">地圖介紹</a>
+        <a class="sub-btn" href="../../lineage/guide/index.html">遊戲攻略</a>
+      </div>
+    </div>
+  </nav>
+</aside>
+<main id="main">
+  <div class="content-area">
+    
+<div class="breadcrumb"><a href="../../index.html">首頁</a><span>›</span><a href="index.html">遊戲攻略</a><span>›</span>命中與攻擊數據研究整理</div>
+<h1 class="page-title">命中與攻擊數據研究整理</h1>
+<div class="article">
+
+      <div class="source-box">
+        📌 本文整理自韓國玩家社群測試與討論，官方尚未公開完整公式，部分內容為玩家推測模型。<br>
+        <a href="https://m.dcinside.com/board/lineage2classic/390153" target="_blank" class="source-link">DEX命中測試 — DCInside</a><br>
+        <a href="https://m.dcinside.com/board/lineage2classic/402822" target="_blank" class="source-link">STR命中測試 — DCInside</a><br>
+        <a href="https://www.inven.co.kr/board/powerbbs.php?come_idx=6482&l=3186" target="_blank" class="source-link">AC系統討論 — Inven</a>
+      </div>
+
+      <h2>一、Classic 版本核心觀察</h2>
+      <p>多數韓國玩家測試後得到一個重要結論：<strong>Classic 版本中，角色等級對命中與攻擊影響非常小。</strong></p>
+      <div class="tip-box">
+        💡 命中主要來源 = DEX + 武器命中 + 裝備命中 + Buff<br>
+        而非舊版天堂的：命中 = 等級 + 職業命中 + DEX
+      </div>
+
+      <h2>二、DEX 對命中的影響</h2>
+      <p>韓國玩家以低等級角色、固定裝備、攻擊同一 AC 目標約 500 次進行統計，結果顯示 DEX 增加時命中率明顯提升，社群推測 <strong>DEX 1 ≈ 命中 +1</strong>。</p>
+      <div class="data-table">
+        <div class="data-row header"><span>DEX 值</span><span>命中率變化</span></div>
+        <div class="data-row"><span>12</span><span>命中率較低</span></div>
+        <div class="data-row"><span>14</span><span>命中率略提升</span></div>
+        <div class="data-row"><span>16</span><span>命中率明顯提升</span></div>
+        <div class="data-row"><span>18</span><span>命中率高</span></div>
+      </div>
+      <div class="tip-box">💡 DEX 是 Classic 命中最重要的能力值。</div>
+
+      <h2>三、STR 對攻擊與命中的影響</h2>
+      <p>STR 主要影響近戰攻擊力，對命中有部分加成。韓國玩家測試發現 STR 命中提升存在區間（11 / 14 / 17），並非每 1 點都提升命中，而是區間成長。</p>
+      <div class="warn-box">⚠️ STR 主要影響傷害，對命中影響較小，請勿以衝命中為目的堆 STR。</div>
+
+      <h2>四、攻擊傷害來源</h2>
+      <p>Classic 版本傷害來源主要為：<strong>武器攻擊 + STR + 追加傷害 + Buff</strong>。裝備影響遠大於等級影響。</p>
+      <div class="tip-box">💡「장비가 캐릭터다」— 裝備就是角色。</div>
+
+      <h2>五、命中判定模型（玩家推測）</h2>
+      <div class="data-table">
+        <div class="data-row header"><span>項目</span><span>說明</span></div>
+        <div class="data-row"><span>命中來源</span><span>DEX + 武器命中 + 裝備命中 + Buff</span></div>
+        <div class="data-row"><span>目標抵抗</span><span>目標 AC（越低越難命中）</span></div>
+        <div class="data-row"><span>簡化公式</span><span>命中率 ≈ 攻擊命中 − 目標 AC</span></div>
+      </div>
+
+      <h2>六、能力值影響整理</h2>
+      <div class="data-table">
+        <div class="data-row header"><span>能力值</span><span>主要影響</span></div>
+        <div class="data-row"><span>STR</span><span>物理傷害</span></div>
+        <div class="data-row"><span>DEX</span><span>命中、回避、攻速（命中核心能力）</span></div>
+        <div class="data-row"><span>CON</span><span>HP</span></div>
+        <div class="data-row"><span>INT</span><span>魔法攻擊</span></div>
+        <div class="data-row"><span>WIS / MEN</span><span>魔法防禦</span></div>
+      </div>
+
+      <h2>七、Classic 與舊天堂差異比較</h2>
+      <div class="data-table">
+        <div class="data-row header"><span>系統</span><span>舊天堂</span><span>Classic</span></div>
+        <div class="data-row"><span>等級命中</span><span>有</span><span>幾乎沒有</span></div>
+        <div class="data-row"><span>職業命中</span><span>有</span><span>不確定</span></div>
+        <div class="data-row"><span>DEX 命中</span><span>中</span><span>高</span></div>
+        <div class="data-row"><span>STR 傷害</span><span>中</span><span>高</span></div>
+        <div class="data-row"><span>裝備影響</span><span>中</span><span>非常高</span></div>
+      </div>
+
+      <h2>八、DEX 12～18 命中區間實測（對象 AC -21 / ER 4）</h2>
+      <p>每個 DEX 數值攻擊 500 次，統計命中率：</p>
+      <div class="data-table" style="font-size:12px;">
+        <div class="data-row header" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr;">
+          <span>敏捷</span><span>總攻擊</span><span>命中</span><span>未命中</span><span>命中率</span>
+        </div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr;"><span>DEX 12</span><span>500</span><span>24</span><span>476</span><span>4.80%</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr;"><span>DEX 13</span><span>500</span><span>50</span><span>450</span><span>10.00%</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr;"><span>DEX 14</span><span>500</span><span>79</span><span>421</span><span>15.80%</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr;"><span>DEX 15</span><span>500</span><span>102</span><span>398</span><span>20.40%</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr;"><span>DEX 16</span><span>500</span><span>118</span><span>382</span><span>23.60%</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr;"><span>DEX 17</span><span>500</span><span>139</span><span>361</span><span>27.80%</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr;"><span>DEX 18</span><span>500</span><span>163</span><span>337</span><span class="highlight">32.60%</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr;"><span>DEX 14 + 弓（命中+2）</span><span>500</span><span>117</span><span>383</span><span>23.40%</span></div>
+      </div>
+      <div class="tip-box">💡 每增加 1 點 DEX，命中率大約提升 3%～5%。</div>
+
+      <h2>九、STR 11～20 命中區間實測（對象 AC -10）</h2>
+      <div class="data-table" style="font-size:12px;">
+        <div class="data-row header" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;">
+          <span>力量</span><span>總攻擊</span><span>命中</span><span>未命中</span><span>命中率</span><span>備註</span>
+        </div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 11</span><span>500</span><span>41</span><span>459</span><span>8.20%</span><span>第1區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 12</span><span>500</span><span>53</span><span>447</span><span>10.60%</span><span>第1區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 13</span><span>500</span><span>54</span><span>446</span><span>10.80%</span><span>第1區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 14</span><span>500</span><span>94</span><span>406</span><span class="highlight">18.80%</span><span>第2區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 15</span><span>500</span><span>99</span><span>401</span><span>19.80%</span><span>第2區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 16</span><span>500</span><span>95</span><span>405</span><span>19.00%</span><span>第2區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 17</span><span>500</span><span>132</span><span>368</span><span class="highlight">26.40%</span><span>第3區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 18</span><span>500</span><span>139</span><span>361</span><span>27.80%</span><span>第3區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 19</span><span>500</span><span>133</span><span>367</span><span>26.60%</span><span>第3區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 20</span><span>500</span><span>136</span><span>364</span><span>27.20%</span><span>第3區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 13 + 匕首（命中+2）</span><span>500</span><span>131</span><span>369</span><span>26.20%</span><span>第3區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 14 + 匕首（命中+2）</span><span>500</span><span>179</span><span>321</span><span class="highlight">35.80%</span><span>第4區</span></div>
+        <div class="data-row" style="grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;"><span>STR 20 + 匕首（命中+2）</span><span>500</span><span>223</span><span>277</span><span class="highlight">44.60%</span><span>第5區</span></div>
+      </div>
+      <div class="warn-box">⚠️ STR 命中並非線性增加，而是區間成長。STR 11→14→17 時命中率會出現明顯跳升。</div>
+      <div class="tip-box">💡 武器本身的命中屬性也會大幅影響最終命中率，加上命中+2 的匕首效果相當於跨越一個命中區間。</div>
+
+      <h2>十、目前未確定的數據</h2>
+      <p>以下數據仍在研究中，官方尚未公開完整數值：DEX → 命中比例、STR → 傷害倍率、命中 vs AC 精確公式、職業命中差異。</p>
+</div>
+<br>
+<a class="back-btn" href="index.html">← 返回攻略列表</a>
+  </div>
+</main>
+<script src="../../js/nav.js"></script>
+</body>
+</html>
