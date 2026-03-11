@@ -64,6 +64,39 @@
     font-size: 12px;
     color: #a0c4ff;
   }
+  .item-icon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 6px;
+    image-rendering: pixelated;
+  }
+  .mob-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin: 2px 4px;
+    image-rendering: pixelated;
+  }
+  .item-cell {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .item-cell.center {
+    justify-content: center;
+  }
+  .event-map-img {
+    width: 100%;
+    max-width: 480px;
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    cursor: zoom-in;
+    margin: 8px auto;
+  }
 </style>
 </head>
 <body>
@@ -122,7 +155,14 @@
 
       <h2>二、活動地區</h2>
       <table class="event-table">
-        <tr><td class="label">活動地區</td><td class="center">糖妖精的遊樂場</td></tr>
+        <tr>
+          <td class="label">活動地區</td>
+          <td class="center">
+            <img src="../../images/lineage/item/map1.jpg" alt="糖妖精的遊樂場地圖" class="event-map-img"
+                 onclick="openLightbox(this.src,'糖妖精的遊樂場')">
+            <div>糖妖精的遊樂場</div>
+          </td>
+        </tr>
         <tr><td class="label">入場條件</td><td>20 等級以上</td></tr>
         <tr><td class="label">時間限制</td><td>每日 30 分鐘</td></tr>
         <tr><td class="label">出現怪物</td><td>甜蜜的／鬆甜的／爽快的果葉、糖衣人</td></tr>
@@ -144,16 +184,32 @@
           <th>說明</th>
         </tr>
         <tr>
-          <td class="center">甜蜜的／鬆甜的／爽快的果葉</td>
-          <td class="center">糖結晶體 ❄️</td>
+          <td class="center">
+            <img src="../../images/lineage/item/m1.jpg" alt="甜蜜的果凍" class="mob-icon">
+            <img src="../../images/lineage/item/m2.jpg" alt="酸甜的果凍" class="mob-icon">
+            <img src="../../images/lineage/item/m3.jpg" alt="爽快的果凍" class="mob-icon"><br>
+            甜蜜的／鬆甜的／爽快的果凍
+          </td>
+          <td class="center">
+            <div class="item-cell center">
+              <img src="../../images/lineage/item/3.jpg" alt="糖結晶體" class="item-icon">糖結晶體
+            </div>
+          </td>
           <td>
             道具專用道具交換材料。丟棄 ✗、交換 ✗、刪除 ○、倉庫 ○<br>
             <span class="delete-date">刪除日期：2026. 3. 25.(三) 維護進行中</span>
           </td>
         </tr>
         <tr>
-          <td class="center">糖衣人（低機率出現）</td>
-          <td class="center">傳遞愛情的巧克力 🎁</td>
+          <td class="center">
+            <img src="../../images/lineage/item/m4.jpg" alt="糖衣人" class="mob-icon"><br>
+            糖衣人（低機率出現）
+          </td>
+          <td class="center">
+            <div class="item-cell center">
+              <img src="../../images/lineage/item/2.jpg" alt="傳遞愛情的巧克力" class="item-icon">傳遞愛情的巧克力
+            </div>
+          </td>
           <td>
             道具專用道具交換材料。丟棄 ✗、交換 ✗、刪除 ○、倉庫 ○<br>
             <span class="delete-date">刪除日期：2026. 3. 25.(三) 維護進行中</span>
@@ -189,62 +245,62 @@
           <th>刪除日</th>
         </tr>
         <tr>
-          <td>傳遞愛情的巧克力 🎁</td>
-          <td>糖結晶體 50 個</td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/2.jpg" alt="傳遞愛情的巧克力" class="item-icon">傳遞愛情的巧克力</div></td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/3.jpg" alt="糖結晶體" class="item-icon">糖結晶體 50 個</div></td>
           <td class="center">無</td>
           <td class="center delete-date">2026. 3. 25.(三)</td>
         </tr>
         <tr>
-          <td>糖結晶體 30 個 ❄️</td>
-          <td>傳遞愛情的巧克力 1 個</td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/3.jpg" alt="糖結晶體" class="item-icon">糖結晶體 30 個</div></td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/2.jpg" alt="傳遞愛情的巧克力" class="item-icon">傳遞愛情的巧克力 1 個</div></td>
           <td class="center">無</td>
           <td class="center delete-date">2026. 3. 25.(三)</td>
         </tr>
         <tr>
-          <td>輕量紅色藥水 🧪</td>
-          <td>糖結晶體 1 個</td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/1.jpg" alt="輕量紅色藥水" class="item-icon">輕量紅色藥水</div></td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/3.jpg" alt="糖結晶體" class="item-icon">糖結晶體 1 個</div></td>
           <td class="center">無</td>
           <td class="center">—</td>
         </tr>
         <tr>
-          <td>輕量自我加速藥水 🧪</td>
-          <td>糖結晶體 5 個</td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/4.jpg" alt="輕量自我加速藥水" class="item-icon">輕量自我加速藥水</div></td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/3.jpg" alt="糖結晶體" class="item-icon">糖結晶體 5 個</div></td>
           <td class="center">無</td>
           <td class="center">—</td>
         </tr>
         <tr>
-          <td>輕量變形卷軸 📜</td>
-          <td>糖結晶體 30 個</td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/5.jpg" alt="輕量變形卷軸" class="item-icon">輕量變形卷軸</div></td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/3.jpg" alt="糖結晶體" class="item-icon">糖結晶體 30 個</div></td>
           <td class="center">無</td>
           <td class="center">—</td>
         </tr>
         <tr>
-          <td>檸檬糖果（AC）🍋</td>
-          <td>糖結晶體 20 個</td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/6.jpg" alt="檸檬糖果" class="item-icon">檸檬糖果（AC）</div></td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/3.jpg" alt="糖結晶體" class="item-icon">糖結晶體 20 個</div></td>
           <td class="center">無</td>
           <td class="center delete-date">2026. 4. 1.(三)</td>
         </tr>
         <tr>
-          <td>薄荷糖果（命中）🍃</td>
-          <td>糖結晶體 20 個</td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/7.jpg" alt="薄荷糖果" class="item-icon">薄荷糖果（命中）</div></td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/3.jpg" alt="糖結晶體" class="item-icon">糖結晶體 20 個</div></td>
           <td class="center">無</td>
           <td class="center delete-date">2026. 4. 1.(三)</td>
         </tr>
         <tr>
-          <td>草莓糖果（MP 恢復）🍓</td>
-          <td>糖結晶體 20 個</td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/8.jpg" alt="草莓糖果" class="item-icon">草莓糖果（MP 恢復）</div></td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/3.jpg" alt="糖結晶體" class="item-icon">糖結晶體 20 個</div></td>
           <td class="center">無</td>
           <td class="center delete-date">2026. 4. 1.(三)</td>
         </tr>
         <tr>
-          <td>白色情人節棒棒糖 🍭</td>
-          <td>糖結晶體 200 個</td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/9.jpg" alt="白色情人節棒棒糖" class="item-icon">白色情人節棒棒糖</div></td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/3.jpg" alt="糖結晶體" class="item-icon">糖結晶體 200 個</div></td>
           <td class="center limit-text">每個帳號 1 天 3 次</td>
           <td class="center">—</td>
         </tr>
         <tr>
-          <td>煩人的齒輪（1 小時）⚙️</td>
-          <td>傳遞愛情的巧克力 10 個</td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/10.jpg" alt="煩人的齒輪" class="item-icon">矮人的齒輪（1 小時）</div></td>
+          <td><div class="item-cell"><img src="../../images/lineage/item/2.jpg" alt="傳遞愛情的巧克力" class="item-icon">傳遞愛情的巧克力 10 個</div></td>
           <td class="center limit-text">每個帳號 1 天 1 次</td>
           <td class="center delete-date">2026. 6. 24.(三)</td>
         </tr>
@@ -257,7 +313,7 @@
           <th>內容</th>
         </tr>
         <tr>
-          <td class="center">白色情人節棒棒糖 🍭</td>
+          <td class="center"><div class="item-cell center"><img src="../../images/lineage/item/9.jpg" alt="白色情人節棒棒糖" class="item-icon">白色情人節棒棒糖</div></td>
           <td>
             使用時，在一定時間內套用以下效果：<br>
             AC -1、命中 +1、HP +30、MP +30、MP 恢復 +2（20 分鐘）<br>
@@ -265,28 +321,28 @@
           </td>
         </tr>
         <tr>
-          <td class="center">檸檬糖果（AC）🍋</td>
+          <td class="center"><div class="item-cell center"><img src="../../images/lineage/item/6.jpg" alt="檸檬糖果" class="item-icon">檸檬糖果（AC）</div></td>
           <td>
             使用時，在一定時間內獲得 AC -1 效果。持續時間 +1200 秒<br>
             <span class="note-text">※ 不會和其他糖果的使用效果同時套用。</span>
           </td>
         </tr>
         <tr>
-          <td class="center">薄荷糖果（命中）🍃</td>
+          <td class="center"><div class="item-cell center"><img src="../../images/lineage/item/7.jpg" alt="薄荷糖果" class="item-icon">薄荷糖果（命中）</div></td>
           <td>
             使用時，在一定時間內獲得命中 +1 效果。持續時間 +1200 秒<br>
             <span class="note-text">※ 不會和其他糖果的使用效果同時套用。</span>
           </td>
         </tr>
         <tr>
-          <td class="center">草莓糖果（MP 恢復）🍓</td>
+          <td class="center"><div class="item-cell center"><img src="../../images/lineage/item/8.jpg" alt="草莓糖果" class="item-icon">草莓糖果（MP 恢復）</div></td>
           <td>
             使用時，在一定時間內獲得 MP 恢復 +2 效果。持續時間 +1200 秒<br>
             <span class="note-text">※ 不會和其他糖果的使用效果同時套用。</span>
           </td>
         </tr>
         <tr>
-          <td class="center">煩人的齒輪（1 小時）⚙️</td>
+          <td class="center"><div class="item-cell center"><img src="../../images/lineage/item/10.jpg" alt="煩人的齒輪" class="item-icon">矮人的齒輪（1 小時）</div></td>
           <td>
             使用時，ATS 使用時間增加 1 小時。<br>
             ATS 追加時間最高可累積至 24 小時。
@@ -296,7 +352,7 @@
 
       <div class="tip-box">
         💡 <strong>效率建議：</strong>糖結晶體換糖果類道具（AC / 命中 / MP 恢復）各需 20 個，建議優先刷滿日常所需再考慮換棒棒糖（200 個）。<br>
-        煩人的齒輪每天只能換 1 個，巧克力來源有限，建議每天都要進場打糖衣人。
+        矮人的齒輪每天只能換 1 個，巧克力來源有限，建議每天都要進場打糖衣人。
       </div>
 
     </div>
@@ -304,6 +360,11 @@
     <a class="back-btn" href="index.html">← 返回攻略列表</a>
   </div>
 </main>
+<div id="lightbox" onclick="closeLightbox()">
+  <div id="lb-title"></div>
+  <img id="lb-img" alt="">
+  <div id="lb-hint">點擊任意處關閉</div>
+</div>
 <script src="../../js/nav.js"></script>
 </body>
 </html>
