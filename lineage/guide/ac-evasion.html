@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>不同 AC 檔位下的迴避率變化 | 天堂經典版攻略 | GameDataVault</title>
+<meta name="description" content="天堂經典版 AC 迴避率實測，AC -20 至 -60 各檔位迴避率數據，AC -50 可達 80% 迴避，AC -60 近乎封頂 96%。">
+<meta property="og:title" content="不同 AC 檔位下的迴避率變化 | 天堂經典版攻略">
+<meta property="og:description" content="天堂經典版 AC -20 至 -60 迴避率實測，了解各 AC 區間的體感差異。">
+<meta property="og:type" content="website">
+<link rel="canonical" href="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../css/style.css">
+<style>
+  .ac-bar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .ac-bar {
+    height: 14px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #4a9eff, #6ddc8b);
+    min-width: 4px;
+  }
+  .ac-bar-label {
+    font-size: 12px;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YS1QEYCML9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YS1QEYCML9');
+</script>
+</head>
+<body>
+<aside id="sidebar">
+  <a href="../../index.html" class="sidebar-header">
+    <span class="logo-icon">⚔️</span>
+    <h1>Game Wiki</h1>
+    <p>遊戲攻略大全</p>
+  </a>
+  <nav>
+    <div class="game-group">
+      <button class="game-btn active" onclick="this.classList.toggle('active');this.nextElementSibling.classList.toggle('open');">
+        <span class="icon">🗡️</span>天堂經典版<span class="chevron">›</span>
+      </button>
+      <div class="submenu open">
+        <a class="sub-btn" href="../../lineage/map/index.html">地圖介紹</a>
+        <a class="sub-btn active" href="../../lineage/guide/index.html">遊戲攻略</a>
+      </div>
+    </div>
+  </nav>
+</aside>
+<main id="main">
+  <div class="content-area">
+    <div class="breadcrumb">
+      <a href="../../index.html">首頁</a><span>›</span>
+      <a href="index.html">遊戲攻略</a><span>›</span>不同 AC 檔位下的迴避率變化
+    </div>
+    <h1 class="page-title">不同 AC 檔位下的迴避率變化</h1>
+    <div class="article">
+
+      <div class="source-box">
+        📌 來源：韓國 DCInside 天堂經典版討論版，玩家食人妖精受擊實測<br>
+        <a href="https://gall.dcinside.com/mgallery/board/view/?id=lineage2classic&no=371929" target="_blank" class="source-link">
+          https://gall.dcinside.com/mgallery/board/view/?id=lineage2classic&no=371929
+        </a>
+      </div>
+
+      <p>作者以女妖精為測試對象，讓食人妖精攻擊，分別在 AC -20 / -30 / -40 / -50 / -60 各記錄 100 次受擊（AC -60 另補至 200 次），觀察各 AC 檔位的命中與迴避狀況。</p>
+
+      <h2>實測數據</h2>
+      <div class="data-table" style="font-size:12.5px;">
+        <div class="data-row header" style="grid-template-columns:1fr 1.2fr 1fr 1fr 2.5fr;">
+          <span>AC</span><span>測試次數</span><span>被擊中</span><span>迴避率</span><span>迴避率視覺化</span>
+        </div>
+        <div class="data-row" style="grid-template-columns:1fr 1.2fr 1fr 1fr 2.5fr;">
+          <span>-20</span><span>100 次</span><span>93 次</span>
+          <span class="warn">7%</span>
+          <span><div class="ac-bar-wrap"><div class="ac-bar" style="width:7%"></div><span class="ac-bar-label">7%</span></div></span>
+        </div>
+        <div class="data-row" style="grid-template-columns:1fr 1.2fr 1fr 1fr 2.5fr;">
+          <span>-30</span><span>100 次</span><span>60 次</span>
+          <span>40%</span>
+          <span><div class="ac-bar-wrap"><div class="ac-bar" style="width:40%"></div><span class="ac-bar-label">40%</span></div></span>
+        </div>
+        <div class="data-row" style="grid-template-columns:1fr 1.2fr 1fr 1fr 2.5fr;">
+          <span>-40</span><span>100 次</span><span>約 34 次</span>
+          <span>約 66%</span>
+          <span><div class="ac-bar-wrap"><div class="ac-bar" style="width:60%"></div><span class="ac-bar-label">66%</span></div></span>
+        </div>
+        <div class="data-row" style="grid-template-columns:1fr 1.2fr 1fr 1fr 2.5fr;">
+          <span>-50</span><span>100 次</span><span>20 次</span>
+          <span class="highlight">80%</span>
+          <span><div class="ac-bar-wrap"><div class="ac-bar" style="width:70%"></div><span class="ac-bar-label">80%</span></div></span>
+        </div>
+        <div class="data-row" style="grid-template-columns:1fr 1.2fr 1fr 1fr 2.5fr;">
+          <span>-60</span><span>200 次</span><span>8 次</span>
+          <span class="highlight">96%</span>
+          <span><div class="ac-bar-wrap"><div class="ac-bar" style="width:96%"></div><span class="ac-bar-label">96%</span></div></span>
+        </div>
+      </div>
+
+      <h2>各 AC 檔位體感說明</h2>
+      <div class="data-table" style="font-size:12.5px;">
+        <div class="data-row header" style="grid-template-columns:1fr 3fr;">
+          <span>AC</span><span>體感與重點</span>
+        </div>
+        <div class="data-row" style="grid-template-columns:1fr 3fr;">
+          <span>-20</span>
+          <span>幾乎沒有迴避效果，打食人妖精會大量消耗藥水。</span>
+        </div>
+        <div class="data-row" style="grid-template-columns:1fr 3fr;">
+          <span>-30</span>
+          <span>開始出現有感迴避，與食人妖精交戰時承受傷害約減少 40%，屬於第一個有效區間。</span>
+        </div>
+        <div class="data-row" style="grid-template-columns:1fr 3fr;">
+          <span>-40</span>
+          <span>進入明顯有感區間，相較 AC -20 承受傷害降到約 30%～40%，接近可閃掉 2/3 的攻擊。</span>
+        </div>
+        <div class="data-row" style="grid-template-columns:1fr 3fr;">
+          <span>-50</span>
+          <span>實戰 1 對 1 幾乎可接近無傷狩獵，很多攻擊揮空，藥水消耗明顯下降。</span>
+        </div>
+        <div class="data-row" style="grid-template-columns:1fr 3fr;">
+          <span>-60</span>
+          <span>已脫離食人妖精命中上限區間，多數攻擊揮空，幾乎封頂，普通食人妖精已不太有威脅。</span>
+        </div>
+      </div>
+
+      <div class="tip-box">
+        💡 AC 從 -20 到 -30 是第一個明顯門檻（迴避率從 7% 跳升至 40%）；-50 以後進入高迴避區間，藥水消耗大幅下降，是值得衝刺的目標數值。
+      </div>
+
+      <div class="warn-box">
+        ⚠️ 本測試對象為女妖精 vs 食人妖精，樣本較小（100～200 次），數據適合用來觀察不同 AC 區間的體感差異，不一定能直接套用到所有怪物與職業。
+      </div>
+
+    </div>
+    <br>
+    <a class="back-btn" href="index.html">← 返回攻略列表</a>
+  </div>
+</main>
+<script src="../../js/nav.js"></script>
+</body>
+</html>
